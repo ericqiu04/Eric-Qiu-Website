@@ -1,12 +1,12 @@
 import {Component} from 'react';
-
+import '../CSS-Files/Introduction.component.css'
 
 class Introduction extends Component {
 
     render() {
 
         return(
-            <div>
+            <div className = "intro">
                 <h1>
                     Hi, I'm Eric!
                 </h1>

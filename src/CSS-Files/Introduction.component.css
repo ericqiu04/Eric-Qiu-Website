@@ -1,4 +1,9 @@
 
+.intro {
+    padding: 400px;
+}
+
 h1{
-    
+     font-size: 6em;  
+     font-weight: bold; 
 }
