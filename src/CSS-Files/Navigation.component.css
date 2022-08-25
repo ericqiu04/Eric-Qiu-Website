@@ -1,8 +1,13 @@
 .icons {
     margin: 10px;
+    color: #B85ADB;
 }
 .icons:hover{
     animation: bounce 1s ease-in-out infinite;
+}
+.Navbar {
+    margin:0;
+    padding:0;
 }
 
 @keyframes bounce {

@@ -1,0 +1,9 @@
+light mode:
+
+#94cd9c (some green colour)
+#f1f1f3 (really light gray colour)
+
+dark mode:
+
+#7fad35 (some dark green colour)
+#2e2e2e (really dark gray colour)

@@ -1,22 +1,44 @@
-import {Component} from 'react';
-import '../CSS-Files/Introduction.component.css'
+import { Component } from "react";
+import "../CSS-Files/Introduction.component.css";
 
 class Introduction extends Component {
+  render() {
+    return (
+      <div className="intro">
+        <h1>Eric Qiu</h1>
+        <div className="hero">
+          <div class="static-txt">I'm a</div>
+          <ul class="dynamic-txts">
+            <li>
+              <span>Programmer</span>
+            </li>
+            <li>
+              <span>Developer</span>
+            </li>
+            <li>
+              <span>Student</span>
+            </li>
+            <li>
+              <span>Tutor</span>
+            </li>
+          </ul>
+        </div>
 
-    render() {
+        <div className="sectionNavigation">
+          <button className="nav-items">Skills</button>
+          <button className="nav-items">Projects</button>
+          <button className="nav-items">About Me</button>
+          <button className="nav-items">Contact Me</button>
+        </div>
+        
 
-        return(
-            <div className = "intro">
-                <h1>
-                    Hi, I'm Eric!
-                </h1>
-                <h4>
-                    I am an inspired front-end developer in Canada, currently studying Computer Engineering at the University of Waterloo.
-                </h4>
-            </div>
 
-        )
-    }
+        {/*Add card stacking animation*/}
+
+        
+      </div>
+    );
+  }
 }
 
 export default Introduction;

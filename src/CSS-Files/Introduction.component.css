@@ -1,9 +1,93 @@
-
+/*general*/
 .intro {
-    padding: 400px;
+    padding: 250px 350px 350px 350px;
+    width: 80%;
+    text-align:left;
 }
 
 h1{
      font-size: 6em;  
      font-weight: bold; 
+}
+
+.name {
+    color:#B85ADB;
+}
+
+/*text animation */
+.hero {
+    display:flex;
+}
+.dynamic-txts {
+    margin-right:50px;
+    height:90px;
+    overflow:hidden;
+    line-height:90px;
+}
+.static-txt {
+    font-size: 60px;
+    font-weight:400;
+}
+.dynamic-txts li {
+    list-style:none;
+    font-size:60px;
+    font-weight: bold;
+    color:#B85ADB;
+    position:relative;
+    top:0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide{
+    100% {
+        top:-360px;
+    }
+}
+.dynamic-txts li span {
+    position:relative;
+    margin:5px 0;
+    line-height:90px;
+}
+.dynamic-txts li span::after {
+    content:'';
+    position:absolute;
+    left:0;
+    height:calc(100% + 15px);
+    width: 100%;
+    background: #f1f1f3;
+    border-left:4px solid #B85ADB;
+    border-radius:3px;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+    40%, 60%{
+        left: calc(100% + 20px);
+    }
+    100%{
+        left:0;
+    }
+}
+
+/*Navigation Items*/
+.nav-items{
+    transition: all 0.5s ease;
+    display:inline-block;
+    padding:10px;
+    border: solid;
+    width: 125px;
+    text-align:center;
+    border-radius:10px;
+    margin:5px;
+    border-color:#B85ADB;
+    color:#B85ADB;
+}
+
+.sectionNavigation{
+    margin-top:30px;
+}
+
+.nav-items:hover {
+    color: #f1f1f3;
+    background-color: #C781E1;
 }

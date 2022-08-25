@@ -3,12 +3,28 @@ import Favicon from "./icons/favicon.png";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Github, Linkedin, FileEarmarkFill } from "react-bootstrap-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../CSS-Files/Navigation.component.css"
+import "../CSS-Files/Navigation.component.css";
+
 class Navigation extends Component {
+  state = {
+    bg: "transparent",
+  };
+
+  listenScrollEvent = (e) => {
+    if (window.scrollY > 50) {
+      this.setState({ bg: "light" });
+    } else {
+      this.setState({ bg: "transparent" });
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenScrollEvent);
+  }
   render() {
     const iconSize = 40;
     return (
-      <Navbar bg="transparent" expand="lg">
+      <Navbar bg={this.state.bg} expand="lg" sticky="top" className = "Navbar">
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -23,13 +39,13 @@ class Navigation extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="https://github.com/ericqiu04" target="_blank">
-                <Github className="icons" size = {iconSize}/>
+                <Github className="icons" size={iconSize} />
               </Nav.Link>
               <Nav.Link href="#link">
-                <Linkedin className="icons" size = {iconSize} />
+                <Linkedin className="icons" size={iconSize} />
               </Nav.Link>
               <Nav.Link href="#home">
-                <FileEarmarkFill className="icons" size = {iconSize} />
+                <FileEarmarkFill className="icons" size={iconSize} />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
