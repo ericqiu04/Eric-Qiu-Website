@@ -1,5 +1,4 @@
 import { Component } from "react";
-
 //CSS Imports
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CSS-Files/App.css'
@@ -7,6 +6,7 @@ import './CSS-Files/App.css'
 //Component Imports
 import Navigation from "./components/Navbar.components";
 import Introduction from "./components/Introduction.components";
+import ProjectMaker from "./components/projectMaker.component";
 
 class App extends Component {
   render() {
@@ -32,8 +32,7 @@ class App extends Component {
         {/*Components*/}
         <Navigation />
         <Introduction/>
-
-        
+        <ProjectMaker/>
       </div>
     );
   }
