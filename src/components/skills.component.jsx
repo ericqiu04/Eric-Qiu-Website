@@ -1,14 +1,13 @@
 import {Component} from 'react';
 import '../CSS-Files/skills.component.css';
-import {Row, Col, Container} from 'react-bootstrap'
+import {Container} from 'react-bootstrap'
+
 class Skills extends Component{
     render() {
 
         return(
             <div>
                 <Container>
-                    <Row>
-                        <Col>
                         <div class="hand spread">
  
                         <div class="card suitdiamonds">
@@ -28,12 +27,6 @@ class Skills extends Component{
                         </div>
                       </div>
 
-                        </Col>
-                        <Col>
-                        
-                        
-                        </Col>
-                    </Row>
                 </Container>
             </div>
         )

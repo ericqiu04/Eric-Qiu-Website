@@ -51,33 +51,70 @@ div[class*="suit"]:after {
 }
 
 .hand {
-    margin: 50px;
+  margin: 50px;
 }
 
-.hand:before,.hand:after{
-    content: "";
-    display:table;
+.hand:before,
+.hand:after {
+  content: "";
+  display: table;
 }
 
 .hand:after {
-    clear:both;
+  clear: both;
 }
 
 .hand {
-    zoom: 1;
+  zoom: 1;
 }
 
-.card:hover{ 
-    cursor:pointer;
+.card:hover {
+  cursor: pointer;
 }
 
 .spread {
-    width: 350px;
-    height: 250px;
-    position: relative;
+  width: 350px;
+  height: 250px;
+  position: relative;
 }
 
 /* '>' selects child class */
 .spread > .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: top 0.3s ease, right 0.3ease;
+  -moz-transition: top 0.3s ease, right 0.3ease;
+  -o-transition: top 0.3s ease, right 0.3ease;
+  transition: top 0.3s ease, right 0.3ease;
+}
 
+.spread:hover .suitdiamonds {
+  left: 30px;
+  top: 0px;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+.spread:hover .suitclubs {
+  left: 60px;
+  top: 10px;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.spread:hover .suithearts {
+  left: 80px;
+  top: 20px;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.spread > .card:hover {
+  -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
 }
