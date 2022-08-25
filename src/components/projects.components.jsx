@@ -15,7 +15,7 @@ class Projects extends Component {
                     {this.props.projectType}
                     {this.props.projectName}
                 </div>
-            
+                
             </div>
         )
     }
