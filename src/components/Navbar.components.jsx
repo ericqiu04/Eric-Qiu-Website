@@ -3,8 +3,10 @@ import Favicon from "./icons/favicon.png";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Github, Linkedin, FileEarmarkFill } from "react-bootstrap-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../CSS-Files/Navigation.component.css"
 class Navigation extends Component {
   render() {
+    const iconSize = 40;
     return (
       <Navbar bg="transparent" expand="lg">
         <Container>
@@ -21,13 +23,13 @@ class Navigation extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="https://github.com/ericqiu04" target="_blank">
-                <Github className="icons" />
+                <Github className="icons" size = {iconSize}/>
               </Nav.Link>
               <Nav.Link href="#link">
-                <Linkedin className="icons" />
+                <Linkedin className="icons" size = {iconSize} />
               </Nav.Link>
               <Nav.Link href="#home">
-                <FileEarmarkFill className="icons" />
+                <FileEarmarkFill className="icons" size = {iconSize} />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
