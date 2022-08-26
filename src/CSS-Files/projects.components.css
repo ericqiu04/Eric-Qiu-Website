@@ -33,3 +33,50 @@
   border-radius: 10px;
   border: 1px solid;
 }
+.projectCard{
+  position: relative;
+  top:75px;
+  width:80%;
+  margin:auto;
+}
+.psuitdiamonds:before,
+.psuitdiamonds:after {
+  content: "♦";
+  color: #ff4033;
+  display:block;
+}
+
+.psuithearts:before,
+.psuithearts:after {
+  content: "♥";
+  color: #ff4033;
+  display:block;
+}
+
+.psuitspades:before,
+.psuitspades:after {
+  content: "♠";
+  color: black;
+  display:block;
+}
+.psuitclubs:before,
+.psuitclubs:after {
+  content: "♣";
+  color: black;
+  display:block;
+}
+
+div[class*="psuit"]:before {
+  position: absolute;
+  font-size: 50px;
+  left: 5px;
+  top: 5px;
+}
+
+div[class*="psuit"]:after {
+  position: absolute;
+  font-size: 50px;
+  right: 5px;
+  bottom: 5px;
+}
+

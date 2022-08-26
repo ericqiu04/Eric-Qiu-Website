@@ -13,6 +13,7 @@ const ProjectJs = [
         projectName: "Fossaul Tutoring Website",
         projectGithub: "https://github.com/ericqiu04/Fossaul-Tutoring-Website",
         projectURL: "https://fossaul-tutoring.netlify.app/",
+        projectDescription: "First ever website, created for my free tutoring program called Fossaul Tutoring",
         devicesUsed: [React, Html, Css, Bootstrap]
     },
     {

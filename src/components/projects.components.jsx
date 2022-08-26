@@ -6,36 +6,45 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Card } from "react-bootstrap";
 class Projects extends Component {
   render() {
+    const suits = ["psuithearts", "psuitdiamonds", "psuitspades", "psuitclubs"];
+    const random = Math.floor(Math.random() * suits.length);
     return (
       <Flippy
         flipOnHover={false} // default false
-        flipOnClick={true} // default false
+        flipOnClick={false} // default false
         flipDirection="horizontal" // horizontal or vertical
         ref={(r) => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
         // if you pass isFlipped prop component will be controlled component.
         // and other props, which will go to div
-        style={{ width: "375px", height: "531px", }} /// these are optional style, it is not necessary
-        className = "flipper"
+        style={{ width: "375px", height: "531px" }} /// these are optional style, it is not necessary
+        className="flipper"
       >
-        <FrontSide>
+        <FrontSide onClick = {() => {this.flippy.toggle();}}>
           <img src={cardIMG} className="cardImg" />
         </FrontSide>
-        <BackSide className = "project-back">
-            <Card.Img variant="top" src={this.props.imgURL} />
+        <BackSide className={suits[random]} onClick = {() => {this.flippy.toggle();}}>
+          <div className="projectCard">
+            <Card.Img
+              className="cardimg"
+              variant="top"
+              src={this.props.imgURL}
+            />
             <Card.Body>
               <Card.Title>{this.props.projectName}</Card.Title>
-              <Card.Text>Helo</Card.Text>
-              <Button variant="primary" className="btn">
+              <Card.Text>{this.props.description}</Card.Text>
+              {/*change css on buttons*/}
+              <Button variant="primary" className="cardbtns" href = {this.props.github} target= "_blank">
                 Repo
               </Button>
-              <Button variant="primary" className="btn">
+              <Button variant="primary" className="btn" href = {this.props.website} target= "_blank">
                 Live
               </Button>
             </Card.Body>
+          </div>
         </BackSide>
       </Flippy>
     );
-  } 
+  }
 }
 
 export default Projects;

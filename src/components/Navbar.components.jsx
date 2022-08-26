@@ -2,6 +2,7 @@ import { Component } from "react";
 import Favicon from "./icons/favicon.png";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Github, Linkedin, FileEarmarkFill } from "react-bootstrap-icons";
+import Resume from './Resume.pdf'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS-Files/Navigation.component.css";
 
@@ -41,10 +42,10 @@ class Navigation extends Component {
               <Nav.Link href="https://github.com/ericqiu04" target="_blank">
                 <Github className="icons" size={iconSize} />
               </Nav.Link>
-              <Nav.Link href="#link">
+              <Nav.Link href="https://www.linkedin.com/in/eric-qiu-72115623b/" target = "_blank">
                 <Linkedin className="icons" size={iconSize} />
               </Nav.Link>
-              <Nav.Link href="#home">
+              <Nav.Link href={Resume} target = "_blank">
                 <FileEarmarkFill className="icons" size={iconSize} />
               </Nav.Link>
             </Nav>

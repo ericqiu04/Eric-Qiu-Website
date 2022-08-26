@@ -5,7 +5,7 @@ import '../CSS-Files/projects.components.css'
 class ProjectMaker extends Component {
   render() {
     return (
-      <div>
+      <div id = "projects">
         <h2 className="subtitle">Projects</h2>
         <h6>click card to read more</h6>
         <div className="projectMaker">
@@ -14,6 +14,9 @@ class ProjectMaker extends Component {
               imgURL={project.projectIMG}
               projectType={project.projectType}
               projectName={project.projectName}
+              description = {project.projectDescription}
+              github = {project.projectGithub}
+              website = {project.projectURl}
             />
           ))}
         </div>

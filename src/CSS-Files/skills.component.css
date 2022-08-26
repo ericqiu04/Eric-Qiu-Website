@@ -1,6 +1,5 @@
 .skillCard {
   position: relative;
-  display: inline-block;
   display: flex;
   justify-content: center;
   width: 150px;
@@ -10,8 +9,8 @@
   -webkit-box-shadow: 3px 3px 7px rgba (0, 0, 0, 0.3);
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
 }
-.skillCard  p {
-  text-align: center;
+.skillCard p {
+  
   font: 100px/220px Georgia, Times New Roman, serif;
 }
 .skillCard img {
@@ -57,71 +56,24 @@ div[class*="suit"]:after {
   bottom: 5px;
 }
 
-.hand {
-  margin: 50px;
+.skill-cards {
+  display:inline-block;
+  margin:auto;
+  margin:5% auto 5% auto;
 }
 
-.hand:before,
-.hand:after {
-  content: "";
-  display: table;
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
 }
 
-.hand:after {
-  clear: both;
-}
-
-.hand {
-  zoom: 1;
-}
-
-.skillCard :hover {
-  cursor: pointer;
-}
-
-.spread {
-  width: 350px;
-  height: 250px;
-  position: relative;
-}
-
-/* '>' selects child class */
-.spread > .skillCard  {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: top 0.3s ease, right 0.3ease;
-  -moz-transition: top 0.3s ease, right 0.3ease;
-  -o-transition: top 0.3s ease, right 0.3ease;
-  transition: top 0.3s ease, right 0.3ease;
-}
-
-.spread:hover .suitdiamonds {
-  left: 30px;
-  top: 0px;
-  -webkit-transform: rotate(10deg);
-  -moz-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
-  transform: rotate(10deg);
-}
-.spread:hover .suitclubs {
-  left: 60px;
-  top: 10px;
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-}
-
-.spread:hover .suithearts {
-  left: 80px;
-  top: 200px;
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-  -o-transform: rotate(30deg);
-  transform: rotate(30deg);
-}
-.spread > .skillCard :hover {
-  -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
 }

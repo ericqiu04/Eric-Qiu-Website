@@ -7,7 +7,7 @@ import './CSS-Files/App.css'
 import Navigation from "./components/Navbar.components";
 import Introduction from "./components/Introduction.components";
 import ProjectMaker from "./components/projectMaker.component";
-import Skills from "./components/skills.component";
+import SkillsMaker from "./components/skillsMaker";
 
 class App extends Component {
   render() {
@@ -33,7 +33,7 @@ class App extends Component {
         {/*Components*/}
         <Navigation />
         <Introduction/>
-        <Skills/>
+        <SkillsMaker/>
         <ProjectMaker/>
       </div>
     );
