@@ -15,27 +15,27 @@ class Skills extends Component {
                 Skills
             </h2>
           <div class="hand spread">
-            <div class="card suitdiamonds">
+            <div class="skillCard suitdiamonds">
               <img src={Html} />
             </div>
 
-            <div class="card suitdiamonds">
+            <div class="skillCard  suitdiamonds">
               <img src={Css} />
             </div>
 
-            <div class="card suithearts">
+            <div class="skillCard  suithearts">
               <img src={Js} />
             </div>
 
-            <div class="card suitclubs">
+            <div class="skillCard  suitclubs">
               <img src={Bootstrap} />
             </div>
 
-            <div class="card suitspades">
+            <div class="skillCard  suitspades">
               <img src={Reactjs} />
             </div>
 
-            <div class="card suithearts">
+            <div class="skillCard  suithearts">
               <p>A</p>
             </div>
           </div>

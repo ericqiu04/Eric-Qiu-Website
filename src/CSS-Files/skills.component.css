@@ -1,4 +1,4 @@
-.card {
+.skillCard {
   position: relative;
   display: inline-block;
   display: flex;
@@ -10,11 +10,11 @@
   -webkit-box-shadow: 3px 3px 7px rgba (0, 0, 0, 0.3);
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
 }
-.card p {
+.skillCard  p {
   text-align: center;
   font: 100px/220px Georgia, Times New Roman, serif;
 }
-.card img {
+.skillCard img {
     width:70%;
     margin:auto;
     display:block;
@@ -75,7 +75,7 @@ div[class*="suit"]:after {
   zoom: 1;
 }
 
-.card:hover {
+.skillCard :hover {
   cursor: pointer;
 }
 
@@ -86,7 +86,7 @@ div[class*="suit"]:after {
 }
 
 /* '>' selects child class */
-.spread > .card {
+.spread > .skillCard  {
   position: absolute;
   top: 0;
   left: 0;
@@ -121,7 +121,7 @@ div[class*="suit"]:after {
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
-.spread > .card:hover {
+.spread > .skillCard :hover {
   -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
 }

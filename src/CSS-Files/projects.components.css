@@ -1,56 +1,35 @@
-.card {   
-    margin: 100px auto 0;
-    width: 400px;
-    height: 600px;
-}
-.card_inner {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
+:root {
+  --width: 375px;
+  --height: 531px;
 }
 
-.card_inner.is-flipped{
-    transform:rotateY(180deg);
+.flipper {
+  display: inline-block;
+  max-width: var(--width);
+  max-height: var(--height);
+  margin: 100px;
+
+}
+.flippy{
+  border:none;
 }
 
-.card_face{
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow:hidden;
-    border-radius:16px;
-    box-shadow: 0px 3px 18px 3px rgba(0,0,0,0.2);
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.card_face--front{
-    background-image:linear-gradient(to bottom right, black, black );
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.card {
+  margin: 0;
 }
 
-.card_face--back{
-    transform:rotateY(180deg);
+
+.flippy-front{
+  box-shadow: none;
 }
-
-.project{
-    position: relative;
-    padding: 30px 30px 40px;
-}
-
-.project:after{
-    content: '';
-    display:block;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    z-index:-1;
-
+.flippy-back{
+  padding:0;
+  border-radius: 10px;
+  border: 1px solid;
 }
