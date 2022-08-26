@@ -1,6 +1,8 @@
 .card {
   position: relative;
   display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 150px;
   height: 220px;
   border-radius: 10px;
@@ -11,6 +13,11 @@
 .card p {
   text-align: center;
   font: 100px/220px Georgia, Times New Roman, serif;
+}
+.card img {
+    width:70%;
+    margin:auto;
+    display:block;
 }
 
 .suitdiamonds:before,
@@ -108,7 +115,7 @@ div[class*="suit"]:after {
 
 .spread:hover .suithearts {
   left: 80px;
-  top: 20px;
+  top: 200px;
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
   -o-transform: rotate(30deg);

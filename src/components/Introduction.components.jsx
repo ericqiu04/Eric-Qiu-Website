@@ -7,8 +7,8 @@ class Introduction extends Component {
       <div className="intro">
         <h1>Eric Qiu</h1>
         <div className="hero">
-          <div class="static-txt">I'm a</div>
-          <ul class="dynamic-txts">
+          <div className="static-txt">I'm a</div>
+          <ul className="dynamic-txts">
             <li>
               <span>Programmer</span>
             </li>
