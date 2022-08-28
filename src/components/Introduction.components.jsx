@@ -10,7 +10,8 @@ class Introduction extends Component {
     const random = Math.floor(Math.random() * suits.length);
     const rand1 = suits[random];
     const rand2 = suits[random];
-    console.log(rand1+ rand2)
+    for (var i = 0; i < 9; i++) {}
+    console.log(rand1 + rand2);
     return (
       <div className="intro" id="hero">
         <Row>
@@ -83,7 +84,16 @@ class Introduction extends Component {
           </Col>
           <Col className="animation" lg={3}>
             {/*Add card stacking animation*/}
-            <div className="loading">
+          </Col>
+        </Row>
+      </div>
+    );
+  }
+}
+
+export default Introduction;
+/*
+<div className="loading">
               <div style={{ "--i": "1" }} className= {rand1}>
                 <span>A</span>
                 <span></span>
@@ -125,11 +135,4 @@ class Introduction extends Component {
                 <span></span>
               </div>
             </div>
-          </Col>
-        </Row>
-      </div>
-    );
-  }
-}
-
-export default Introduction;
+            */
