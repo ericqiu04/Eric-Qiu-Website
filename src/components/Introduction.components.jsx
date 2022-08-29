@@ -66,7 +66,7 @@ class Introduction extends Component {
               </Link>
               <Link
                 activeClass="active"
-                to="skills"
+                to="about-me"
                 spy={true}
                 smooth={true}
                 offset={50}
@@ -75,17 +75,7 @@ class Introduction extends Component {
               >
                 <button className="nav-items">About Me</button>
               </Link>
-              <Link
-                activeClass="active"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                onSetActive={this.handleSetActive}
-              >
-                <button className="nav-items">Contact</button>
-              </Link>
+              
             </div>
           </Col>
           <Col className="animation" lg={3}>

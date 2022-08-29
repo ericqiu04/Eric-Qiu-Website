@@ -1,0 +1,13 @@
+#about-me {
+  width: 50%;
+  margin: auto;
+  border: 1px solid;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 3px 3px 7px rgba (0, 0, 0, 0.3);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+#profile-picture img {
+  border-radius: 50%;
+}
