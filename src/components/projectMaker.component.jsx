@@ -16,7 +16,7 @@ class ProjectMaker extends Component {
               projectName={project.projectName}
               description = {project.projectDescription}
               github = {project.projectGithub}
-              website = {project.projectURl}
+              website = {project.projectURL}
             />
           ))}
         </div>

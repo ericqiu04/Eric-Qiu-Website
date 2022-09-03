@@ -80,3 +80,21 @@ div[class*="psuit"]:after {
   bottom: 5px;
 }
 
+/* Project Back Page */
+
+.cardbtns {
+  padding: 10px 30px;
+  margin: 0px 0.25em;
+  margin-top: 2em;
+  background-color: #FF4033;
+  border-color: #FF4033;
+  transition: 0.3s;
+}
+.cardbtns:hover {
+  background-color: #8c0900;
+  border-color: #8c0900;
+}
+
+.projectName {
+  margin: 10px 2em;
+}

@@ -30,13 +30,13 @@ class Projects extends Component {
               src={this.props.imgURL}
             />
             <Card.Body>
-              <Card.Title>{this.props.projectName}</Card.Title>
-              <Card.Text>{this.props.description}</Card.Text>
+              <Card.Title className = "projectName">{this.props.projectName}</Card.Title>
+              <Card.Text className = "projectdescription">{this.props.description}</Card.Text>
               {/*change css on buttons*/}
               <Button variant="primary" className="cardbtns" href = {this.props.github} target= "_blank">
                 Repo
               </Button>
-              <Button variant="primary" className="btn" href = {this.props.website} target= "_blank">
+              <Button variant="primary" className="cardbtns" href = {this.props.website} target= "_blank">
                 Live
               </Button>
             </Card.Body>
