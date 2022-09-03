@@ -2,6 +2,8 @@ import { Component } from "react";
 //CSS Imports
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CSS-Files/App.css";
+import { ChakraProvider } from "@chakra-ui/react";
+
 
 //Component Imports
 import Navigation from "./components/Navbar.components";
@@ -13,10 +15,10 @@ import ContactMe from "./components/contact-me.components";
 
 /*
   <Navigation />
-        <Introduction/>
-        <SkillsMaker/>
-        <ProjectMaker/>
-        <AboutMe/>
+        <Introduction />
+        <SkillsMaker />
+        <ProjectMaker />
+        <AboutMe />
         */
 class App extends Component {
   render() {
@@ -44,7 +46,8 @@ class App extends Component {
         <SkillsMaker />
         <ProjectMaker />
         <AboutMe />
-        <ContactMe />
+        <ChakraProvider><ContactMe/></ChakraProvider>
+        
       </div>
     );
   }

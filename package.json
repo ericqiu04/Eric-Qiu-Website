@@ -9,16 +9,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.9",
+    "@chakra-ui/react": "^2.3.1",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
     "flowbite": "^1.5.2",
     "flowbite-react": "^0.1.10",
+    "framer-motion": "^6",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-bootstrap-icons": "^1.8.4",
     "react-card-flip": "^1.1.5",
     "react-dom": "^18.2.0",
     "react-flippy": "^1.1.0",
+    "react-icons": "^4.4.0",
     "react-scroll": "^1.8.7"
   },
   "devDependencies": {
