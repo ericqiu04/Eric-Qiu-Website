@@ -9,6 +9,7 @@ import Introduction from "./components/Introduction.components";
 import ProjectMaker from "./components/projectMaker.component";
 import SkillsMaker from "./components/skillsMaker";
 import AboutMe from "./components/about-me.components";
+import ContactMe from "./components/contact-me.components";
 
 /*
   <Navigation />
@@ -43,6 +44,7 @@ class App extends Component {
         <SkillsMaker />
         <ProjectMaker />
         <AboutMe />
+        <ContactMe />
       </div>
     );
   }
