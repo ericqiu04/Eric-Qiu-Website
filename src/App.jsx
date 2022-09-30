@@ -2,8 +2,7 @@ import { Component } from "react";
 //CSS Imports
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CSS-Files/App.css";
-import { ChakraProvider } from "@chakra-ui/react";
-
+import createCache from "@emotion/cache";
 
 //Component Imports
 import Navigation from "./components/Navbar.components";
@@ -11,7 +10,6 @@ import Introduction from "./components/Introduction.components";
 import ProjectMaker from "./components/projectMaker.component";
 import SkillsMaker from "./components/skillsMaker";
 import AboutMe from "./components/about-me.components";
-import ContactMe from "./components/contact-me.components";
 
 /*
   <Navigation />
@@ -22,6 +20,10 @@ import ContactMe from "./components/contact-me.components";
         */
 class App extends Component {
   render() {
+    const emotionCache = createCache({
+      key: "emotion-css-cache",
+      prepend: true, // ensures styles are prepended to the <head>, instead of appended
+    });
     return (
       <div>
         {/*Bootstrap Js Scripts*/}
@@ -46,8 +48,6 @@ class App extends Component {
         <SkillsMaker />
         <ProjectMaker />
         <AboutMe />
-        <ChakraProvider><ContactMe/></ChakraProvider>
-        
       </div>
     );
   }
