@@ -14,62 +14,6 @@ h1{
     color:#FF4033;
 }
 
-/*text animation */
-.hero {
-    display:flex;
-}
-.dynamic-txts {
-    margin-right:50px;
-    height:90px;
-    overflow:hidden;
-    line-height:90px;
-}
-.static-txt {
-    margin-right:-10px;
-    font-size: 60px;
-    font-weight:400;
-}
-.dynamic-txts li {
-    list-style:none;
-    font-size:60px;
-    font-weight: bold;
-    color:#FF4033;
-    position:relative;
-    top:0;
-    animation: slide 12s steps(4) infinite;
-}
-
-@keyframes slide{
-    100% {
-        top:-360px;
-    }
-}
-.dynamic-txts li span {
-    position:relative;
-    margin:5px 0;
-    line-height:90px;
-}
-.dynamic-txts li span::after {
-    content:'';
-    position:absolute;
-    left:0;
-    z-index:1;
-    height:calc(100% + 15px);
-    width: 100%;
-    background: #f1f1f3;
-    border-left:4px solid #FF4033;
-    border-radius:3px;
-    animation: typing 3s steps(10) infinite;
-}
-
-@keyframes typing {
-    40%, 60%{
-        left: calc(100% + 20px);
-    }
-    100%{
-        left:0;
-    }
-}
 
 /*Navigation Items*/
 .nav-items{
