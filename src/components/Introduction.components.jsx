@@ -3,6 +3,7 @@ import "../CSS-Files/Introduction.component.css";
 import { Link } from "react-scroll";
 import { Row, Col } from "react-bootstrap";
 import "../CSS-Files/stackCard.css";
+import Typewriter from 'typewriter-effect';
 
 class Introduction extends Component {
   render() {
@@ -23,23 +24,13 @@ class Introduction extends Component {
         <Row>
           <Col lg={9}>
             <h1>Eric Qiu</h1>
-            <div className="hero">
-              <div className="static-txt">I'm a</div>
-              <ul className="dynamic-txts">
-                <li>
-                  <span>Programmer</span>
-                </li>
-                <li>
-                  <span>Developer</span>
-                </li>
-                <li>
-                  <span>Student</span>
-                </li>
-                <li>
-                  <span>Tutor</span>
-                </li>
-              </ul>
-            </div>
+            <h3>I am a <Typewriter 
+              options= {{
+                strings: ['Programmer', 'Tutor', 'Developer', 'Student'],
+                autoStart:true,
+                loop:true,
+              }}/>
+            </h3>
 
             <div className="sectionNavigation">
               <Link
